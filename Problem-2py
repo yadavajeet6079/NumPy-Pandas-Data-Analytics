@@ -1,0 +1,76 @@
+import numpy as np
+arr = np.array([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
+print("Original Array:")
+print(arr)
+print("\nIndexing:")
+print("First element:", arr[0])
+print("Fifth element:", arr[4])
+print("Last element:", arr[-1])
+print("\nSlicing:")
+print("Elements from index 2 to 6:", arr[2:7])
+print("First five elements:", arr[:5])
+print("Last three elements:", arr[-3:])
+two_d = np.array([
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+])
+
+print("\nTwo-Dimensional Array:")
+print(two_d)
+print("\nRows:")
+print("First row:", two_d[0])
+print("Second row:", two_d[1])
+print("\nColumns:")
+print("First column:", two_d[:, 0])
+print("Second column:", two_d[:, 1])
+print("\nSpecific Element:")
+print("Element at row 2, column 3:", two_d[1, 2])
+reshaped_arr = arr.reshape(2, 5)
+print("\nReshaped Array (2 x 5):")
+print(reshaped_arr)
+reshaped_arr2 = arr.reshape(5, 2)
+
+print("\nReshaped Array (5 x 2):")
+print(reshaped_arr2)
+
+#Output
+"""Original Array:
+[ 10  20  30  40  50  60  70  80  90 100]
+
+Indexing:
+First element: 10
+Fifth element: 50
+Last element: 100
+
+Slicing:
+Elements from index 2 to 6: [30 40 50 60 70]
+First five elements: [10 20 30 40 50]
+Last three elements: [ 80  90 100]
+
+Two-Dimensional Array:
+[[10 20 30]
+ [40 50 60]
+ [70 80 90]]
+
+Rows:
+First row: [10 20 30]
+Second row: [40 50 60]
+
+Columns:
+First column: [10 40 70]
+Second column: [20 50 80]
+
+Specific Element:
+Element at row 2, column 3: 60
+
+Reshaped Array (2 x 5):
+[[ 10  20  30  40  50]
+ [ 60  70  80  90 100]]
+
+Reshaped Array (5 x 2):
+[[ 10  20]
+ [ 30  40]
+ [ 50  60]
+ [ 70  80]
+ [ 90 100]]"""
